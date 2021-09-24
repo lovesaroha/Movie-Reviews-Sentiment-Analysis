@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="sentiment analysis">
+    <title>Movie Reviews Sentiment Analysis</title>
+    <!-- Include css files. -->
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/fa.min.css">
+</head>
+
+<body>
+    <div class="container w-full mx-auto max-w-8/12 md:px-4 pb-8">
+        <!-- Header. -->
+        <center>
+            <h1 class="font-bold display-1 underline">
+                Movie Reviews Sentiment Analysis
+            </h1>
+            <h4 class="text-subtitle mb-6">Sentiment analysis is the use of natural language processing, text analysis,
+                computational linguistics, and biometrics to systematically identify, extract, quantify, and study
+                affective states and subjective information.</h4>
+        </center>
+    </div>
+    <div id="view_id" class="mb-6 mx-auto max-w-xl">
+        <!-- Loading. -->
+        <center>
+            <i class="fad fa-spinner-third text-primary fa-3x fa-spin"></i>
+            <h3 class="font-bold">Loading Model..</h3>
+        </center>
+    </div>
+    <!-- Footer. -->
+    <div class="mb-2 card text-center p-2 mx-auto max-w-xl">
+        <h4 class="text-subtitle"><a href="https://github.com/lovesaroha/Reviews-Sentiment-Analysis"
+                target="_blank">LoveSaroha/Reviews-Sentiment-Analysis</a></h4>
+        <h3 class="text-subtitle font-bold mb-0 hover:underline cursor-pointer"
+            onclick="javascript: window.location = 'https://lovesaroha.com';">Love Saroha</h3>
+        <h4 class="text-gray">lovesaroha1994@gmail.com</h4>
+    </div>
+    <!-- Include script.js file -->
+    <script type="text/javascript" src="./assets/tf.min.js"></script>
+    <script type="text/javascript" src="./assets/metadata.js"></script>
+    <script type="text/javascript" src="./assets/script.js"></script>
+</body>
+
+</html>
+
+<!-- Home page template. -->
+<template id="homePage_id">
+    <div class="bg-light mx-auto max-w-xl mb-2 p-2 text-center">
+        <h4 class="text-gray mb-0">Type a review and press enter to see positivity.</h4>
+    </div>
+    <!-- Review. -->
+    <textarea type="text" name="review" class="w-full mb-2" onchange="javascript: getSentiment(this);"
+        placeholder="Review here.." rows="4" cols="3" autocomplete="off" required></textarea>
+    <!-- Show  positivity. -->
+    <div class="card p-2 mb-3">
+        <center>
+            <h3 class="mb-3">
+                <font class="bg-primary px-4 p-2 text-white" id="score_id">0% Positive</font>
+            </h3>
+        </center>
+        <div class="overflow-hidden h-2 flex bg-light">
+            <div style="width: 0%;" id="progress_id" class="flex flex-col whitespace-nowrap justify-center bg-primary">
+            </div>
+        </div>
+    </div>
+</template>
