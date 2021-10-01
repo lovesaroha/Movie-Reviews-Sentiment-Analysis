@@ -28,7 +28,7 @@ let vocabularySize = metaData['vocabulary_size'];
 
 let model;
 // Load trained model.
-tf.loadLayersModel("https://models.lovesaroha.com/movie-reviews-sentiment-analysis-model/model.json").then(savedModel => {
+tf.loadLayersModel("https://models.lovesaroha.com/Movie-Reviews-Sentiment-Analysis-Model/model.json").then(savedModel => {
   model = savedModel;
   document.getElementById("view_id").innerHTML = document.getElementById("homePage_id").innerHTML;
 }).catch(e => { console.log(e); })
