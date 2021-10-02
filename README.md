@@ -1,5 +1,5 @@
 # Movie-Reviews-Sentiment-Analysis
-Sentiment analysis is the use of natural language processing, text analysis, computational linguistics, and biometrics to systematically identify, extract, quantify, and study affective states and subjective information.<br> Trained model files [lovesaroha/Trained-Models/Movie-Reviews-Sentiment-Analysis-Model](https://github.com/lovesaroha/Trained-Models/Movie-Reviews-Sentiment-Analysis-Model)<br>
+Sentiment analysis is the use of natural language processing, text analysis, computational linguistics, and biometrics to systematically identify, extract, quantify, and study affective states and subjective information.<br> Trained model files [lovesaroha/Trained-Models/Movie-Reviews-Sentiment-Analysis-Model](https://github.com/lovesaroha/Trained-Models/tree/main/Movie-Reviews-Sentiment-Analysis-Model)<br>
 Demo [lovesaroha/Movie-Reviews-Sentiment-Analysis](https://ml.lovesaroha.com/Movie-Reviews-Sentiment-Analysis)
 
 
